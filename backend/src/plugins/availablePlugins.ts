@@ -77,6 +77,7 @@ import { UtilityPlugin } from "./Utility/UtilityPlugin.js";
 import { utilityPluginDocs } from "./Utility/docs.js";
 import { WelcomeMessagePlugin } from "./WelcomeMessage/WelcomeMessagePlugin.js";
 import { welcomeMessagePluginDocs } from "./WelcomeMessage/docs.js";
+import { YouTubeNotificationsPlugin } from "./YouTubeNotifications/YouTubeNotificationsPlugin.js";
 
 export const availableGuildPlugins: ZeppelinGuildPluginInfo[] = [
   {
@@ -230,6 +231,10 @@ export const availableGuildPlugins: ZeppelinGuildPluginInfo[] = [
   {
     plugin: WelcomeMessagePlugin,
     docs: welcomeMessagePluginDocs,
+  },
+  {
+    plugin: YouTubeNotificationsPlugin,
+    docs: welcomeMessagePluginDocs, // TODO(CleverSource): TEMP!
   },
   {
     plugin: CommonPlugin,
